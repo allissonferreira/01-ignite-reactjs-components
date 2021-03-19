@@ -1,5 +1,9 @@
 import { MovieCard } from './MovieCard';
 
+interface SelectedGenre {
+  title: string;
+}
+
 export function Content(props) {
   const movies = props.movies;
   const selectedGenre = props.selectedGenre;
