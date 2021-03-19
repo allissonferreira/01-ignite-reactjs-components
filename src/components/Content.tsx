@@ -21,7 +21,7 @@ interface ContentProps {
 export function Content(props: ContentProps) {
   const movies = props.movies;
   const selectedGenre = props.selectedGenre;
-  
+
   return (
     <div className="container">
       <header>
