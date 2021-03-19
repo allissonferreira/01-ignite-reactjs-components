@@ -4,7 +4,21 @@ interface SelectedGenre {
   title: string;
 }
 
-export function Content(props) {
+interface ContentProps {
+  movies: Array<{
+    imdbID: string;
+    Title: string;
+    Poster: string;
+    Ratings: Array<{
+      Source: string;
+      Value: string;
+    }>;
+    Runtime: string;
+  }>;
+  selectedGenre: SelectedGenre;
+};
+
+export function Content(props: ContentProps) {
   const movies = props.movies;
   const selectedGenre = props.selectedGenre;
   
