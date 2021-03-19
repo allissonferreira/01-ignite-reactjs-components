@@ -1,6 +1,4 @@
-interface Genre {
-    title: string;
-};
+import { Genre } from '../interfaces/Genre';
 
 interface HeaderProps {
     genre: Genre;

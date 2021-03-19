@@ -1,9 +1,7 @@
 import { Header } from './Header';
 import { MovieCard } from './MovieCard';
 
-interface SelectedGenre {
-  title: string;
-}
+import { Genre } from '../interfaces/Genre';
 
 interface ContentProps {
   movies: Array<{
@@ -16,7 +14,7 @@ interface ContentProps {
     }>;
     Runtime: string;
   }>;
-  selectedGenre: SelectedGenre;
+  selectedGenre: Genre;
 };
 
 export function Content(props: ContentProps) {
