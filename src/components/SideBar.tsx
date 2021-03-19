@@ -10,5 +10,8 @@ interface SideBarProps {
 }
 
 export function SideBar(props: SideBarProps) {
-  // Complete aqui
+  
+  const genres = props.genres;
+  const selectedGenreId = props.selectedGenreId;
+  const handleClickButton = props.handleClickButton;
 }
