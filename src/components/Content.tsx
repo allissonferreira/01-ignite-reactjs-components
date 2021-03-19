@@ -2,18 +2,10 @@ import { Header } from './Header';
 import { MovieCard } from './MovieCard';
 
 import { Genre } from '../interfaces/Genre';
+import { Movie } from '../interfaces/Movie';
 
 interface ContentProps {
-  movies: Array<{
-    imdbID: string;
-    Title: string;
-    Poster: string;
-    Ratings: Array<{
-      Source: string;
-      Value: string;
-    }>;
-    Runtime: string;
-  }>;
+  movies: Array<Movie>;
   selectedGenre: Genre;
 };
 
