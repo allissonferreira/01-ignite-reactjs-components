@@ -1,11 +1,9 @@
 import { Button } from './Button';
 
+import { Genre } from '../interfaces/Genre';
+
 interface SideBarProps {
-  genres: Array<{
-    id: number;
-    title: string;
-    name: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
-  }>;
+  genres: Array<Genre>;
   iconName?: string;
   selectedGenreId: number;
   handleClickButton: Function;
