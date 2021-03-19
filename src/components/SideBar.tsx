@@ -6,7 +6,7 @@ interface SideBarProps {
     title: string;
     name: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
   }>;
-  iconName: string;
+  iconName?: string;
   selectedGenreId: number;
   handleClickButton: Function;
 }
