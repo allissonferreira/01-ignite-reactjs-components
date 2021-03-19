@@ -1,3 +1,4 @@
+import { Header } from './Header';
 import { MovieCard } from './MovieCard';
 
 interface SelectedGenre {
@@ -24,9 +25,9 @@ export function Content(props: ContentProps) {
 
   return (
     <div className="container">
-      <header>
-        <span className="category">Category:<span> {selectedGenre.title}</span></span>
-      </header>
+      <Header
+         genre={selectedGenre}
+      />
 
       <main>
         <div className="movies-list">
